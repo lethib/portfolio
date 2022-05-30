@@ -6,4 +6,4 @@
 - @tailwindcss
 - @tailwindcss/forms
 - uikit
-- daisyUI (based on tailwindcss)
+- daisyUI (based on @tailwindcss)
