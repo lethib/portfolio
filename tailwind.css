@@ -1,0 +1,14 @@
+a, a:hover, a:focus, a:active {
+     text-decoration: none;
+     color: inherit;
+ }
+
+@font-face {
+  font-family: "Poppins";
+
+  src: url('static/fonts/Poppins-Medium.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
