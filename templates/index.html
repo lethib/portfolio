@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="shortcut icon" href="/static/img/thib-animoji.PNG" type="image/PNG">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
 
@@ -156,12 +159,13 @@
     <section id="test" class="flex items-center justify-center" style="background-image: url('/static/img/laplagne.jpg'); background-size: cover; height: 100vh; background-repeat: no-repeat;">
         <div class="uk-animation-fade" style="animation-duration: 1000ms; margin-top: -20%;" uk-parallax="y: 100;">
             <div class="text-white text-6xl text-center">Thibault Mroz</div>
-            <div class="text-white text-4xl mt-12 text-center">Développeur Web Junior</div>
+            <div class="text-white text-4xl mt-12 text-center">Développeur Web Freelance</div>
+            <div class="text-white text-2xl mt-4 text-center">Un autodidacte pour réaliser vos projets</div>
             <a
                 class="text-black uk-link-reset flex items-center justify-center px-8 py-4 mt-12 font-bold transition bg-blue-100 border-4 border-black rounded-xl focus:outline-none focus:ring shadow-[6px_6px_0_0_#000] hover:shadow-none active:bg-pink-50"
                 href="#profil" uk-scroll
                 >
-                <span class="text-black">En savoir plus sur moi </span><span aria-hidden="true" class="ml-1.5" role="img">🤔</span>
+                <span class="text-black">En savoir plus</span><span aria-hidden="true" class="ml-1.5" role="img">🤔</span>
             </a>
         </div>
     </section>
@@ -174,10 +178,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 place-content-around justify-items-center">
             <img src="/static/img/thib-clin.png" class="mt-4 lg:mt-16" width="350" alt="">
             <div class="text-white text-justify mx-6 lg:mx-0 lg:mr-28 space-y-4 text-lg">
-                    <p><strong>Salut !</strong> Je m'appelle Thibault, 22 ans et toutes ses dents ! 😁 Je suis actuellement étudiant à Grenoble-INP Phelma, une école d'ingénieur. Pour décrocher cette école, j'ai fait deux ans de prépa (CPGE Math Sup / Math Spé). 🥵 J'ai toujours beaucoup aimé la programmation et depuis maintenant un an, je m'intéresse beaucoup au Développement Web.</p>
-                    <p><strong>Pourquoi le Développement Web ? </strong>Je me suis intéressé à ce domaine en me baladant sur internet et en tombant sur des beaux sites web qui donnent envie de passer du temps dessus (et de faire joujou avec les animations existantes). Je trouve ça incroyable tout ce qu'on peut faire maintenant dans ce domaine ! 🤩 </p> 
-                    <p><strong>Pourquoi me lancer en tant que Freelance ?</strong> 2 réponses. La première est que je veux me confronter à de vraies missions avec un client afin d'évaluer mes compétences techniques, d'écoute et de conseil. La seconde, est que c'est un bon moyen de gagner de l'argent, comme certains font du soutien scolaire par exemple. </p> 
-                    <p>Je n'ai pas de formation dans ce domaine vu que j'ai tout appris en auto-didacte sur mon temps libre grâce à des vidéos sur YouTube mais également grâce aux nombreux tutoriels existants sur la toile ! 🙂 J'ai réalisé des projets personnels que vous pourrez voir dans mon portfolio pour m'entraîner. Rien de mieux que des projets pour apprendre à coder et pour découvrir de nouvelles choses. Je suis de nature très (trop ?) curieux, ce qui me pousse m'améliorer chaque jour. 👍🏼</p> 
+                    <p><strong>Salut !</strong> Je m'appelle Thibault, 22 ans ! Je suis actuellement étudiant à Grenoble-INP Phelma, une école d'ingénieur. Pour intégrer cette école, j'ai fait deux ans de prépa (CPGE Math Sup / Math Spé). J'ai toujours beaucoup aimé la programmation et depuis maintenant un an, je m'intéresse beaucoup au Développement Web.</p>
+                    <p><strong>Pourquoi le Développement Web ? </strong>Je me suis intéressé à ce domaine en naviguant sur internet et en découvrant des sites web très esthétiques et fonctionnels. La technologie Web a fortement évolué ce qui laisse place à une grande créativité !</p> 
+                    <p><strong>Pourquoi me lancer en tant que Freelance ?</strong>J'aime me rendre utile. C'est pourquoi je veux proposer mes services pour répondre à des demandes précises. C'est aussi pour moi une très bonne opportunité d'utiliser mes compétences techniques, de communication, d'écoute et de conseil.</p> 
+                    <p>Je n'ai pas de formation dans ce domaine : j'ai tout appris en autodidacte. J'ai réalisé des projets personnels pour m'entrâiner que vous pourrez retrouver dans mon portfolio. Rien de mieux que des projets pour apprendre à coder et pour découvrir de nouvelles choses.</p> 
         </div>
         </div>
         
@@ -222,7 +226,7 @@
 
 
     <section id="portfolio" class="bg-fond-bleu pb-16" style="background-size: cover;">
-        <h3 class="text-white text-center text-3xl font-bold mb-12 pt-16">
+        <h3 class="text-white text-center text-3xl font-bold mb-20 pt-16">
             PORTFOLIO
         </h3>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-24 place-content-around justify-items-center">
@@ -242,19 +246,39 @@
                     <li class="flex items-center"><img src="/static/img/icons8-html-5.svg" width="25" alt=""> HTML</li>
                     <li class="flex items-center"><img src="/static/img/icons8-css3.svg" width="25" alt=""> CSS</li>
                     <li class="flex items-center"><img src="/static/img/tailwind-css-2.svg" width="25" alt="">Tailwindcss</li>
-                    <li class="flex items-center"><img src="/static/img/icons8-javascript.svg" width="25" alt=""> JS</li>
                     <li class="flex items-center"><img src="/static/img/icons8-python.svg" width="25" alt=""> Python</li>
                 </ul>
                 <ul class="flex xl:hidden space-x-3 mt-1 text-white">
                     <li class="flex items-center"><img src="/static/img/icons8-html-5.svg" width="25" alt=""></li>
                     <li class="flex items-center"><img src="/static/img/icons8-css3.svg" width="25" alt=""></li>
                     <li class="flex items-center"><img src="/static/img/tailwind-css-2.svg" width="25" alt=""></li>
-                    <li class="flex items-center"><img src="/static/img/icons8-javascript.svg" width="25" alt=""></li>
                     <li class="flex items-center"><img src="/static/img/icons8-python.svg" width="25" alt=""></li>
                 </ul>
             </div>
         </div>
       </a>
+
+        <div class="-ml-24 place-self-center">
+            <h5 class="text-white text-center text-2xl font-bold mb-12" uk-scrollspy="uk-animation-fade">Site Vitrine : présentation d'association</h5>
+            <ul class="text-white space-y-6 text-xl">
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Un design <strong>moderne</strong> et <strong>épruré</strong> pour ques les utilisateurs s'y retrouvent facilement.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Site <strong>optimisé</strong> pour Ordinateur, Tablette et Téléphone.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Formulaire <strong>Design</strong> pour réserver du matériel sportif.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Utilisation de l'<strong>API Google Sheet</strong> pour partager les réponses du formulaire.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Envoie de mail automatique pour prévenir d'une nouvelle réponse.</li>
+            </ul>
+        </div>
+
+        <div class="-mr-24 place-self-center">
+            <h5 class="text-white text-center text-2xl font-bold mb-12" uk-scrollspy="uk-animation-fade">Site Temporaire pour un évènement</h5>
+            <ul class="text-white space-y-6 text-xl">
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Un design <strong>moderne</strong> et <strong>épruré</strong> pour ques les utilisateurs s'y retrouvent facilement.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Site <strong>optimisé</strong> pour Ordinateur, Tablette et Téléphone.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Formulaire <strong>Design</strong> pour participer à l'évènement.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Sur demande du client, utilisation de l'<strong>API Microsoft Excel</strong> pour enregistrer les achats.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 <strong>Intégration</strong> du service de paiement Lydia via son API.</li>
+            </ul>
+        </div>
 
 
         <a href="#tombola-bds" class="bloc uk-link-reset overflow-hidden rounded-2xl w-3/4 transition hover:scale-110" uk-scrollspy="cls:uk-animation-slide-right-medium; delay: 400">
@@ -317,6 +341,27 @@
         </div>
         </a>
 
+        <div class="-ml-24 place-self-center">
+            <h5 class="text-white text-center text-2xl font-bold mb-12" uk-scrollspy="uk-animation-fade">Mise en page d'un site d'e-commerce</h5>
+            <ul class="text-white space-y-6 text-xl">
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Un design <strong>moderne</strong> et  <strong>épuré</strong> pour ques les utilisateurs s'y retrouvent facilement.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Site <strong>optimisé</strong> pour Ordinateur, Tablette et Téléphone.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Effet de parallax pour <strong>une navigation agréable</strong>.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Mise en place d'un caroussel <strong>responsive</strong> pour présenter les produits.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium, delay: 400"><a href="https://elthib.pythonanywhere.com/home">🔗 Site Web Actif</a></li>
+            </ul>
+        </div>
+
+        <div class="ml-24 place-self-center">
+            <h5 class="text-white text-center text-2xl font-bold mb-12" uk-scrollspy="uk-animation-fade">WebApp pour un Projet</h5>
+            <ul class="text-white space-y-6 text-xl">
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Un design <strong>moderne</strong> et <strong>épruré</strong> pour ques les utilisateurs s'y retrouvent facilement.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Site <strong>optimisé</strong> pour Ordinateur, Tablette et Téléphone.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Création d'un formulaire <strong>multi-step</strong> pour une meilleure expérience.</li>
+                <li uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 400">👉🏼 Sur demande du client, utilisation de l'<strong>API Microsoft Excel</strong> pour mettre en page toutes les données.</li>
+            </ul>
+        </div>
+
         <a href="#erudite" class="bloc uk-link-reset overflow-hidden rounded-2xl w-3/4 transition hover:scale-110" uk-scrollspy="cls:uk-animation-slide-right-medium; delay: 400">
             <img class="object-cover object-top w-full h-60" src="/static/img/eru-1.png" alt="Page d'accueil du site du BDS" />
           
@@ -354,8 +399,8 @@
         <h3 class="text-fond-bleu text-center text-3xl font-bold mb-4 pt-16">
             CONTACT
         </h3>
-
-        <form action="#" method="POST" class="flex items-center justify-center h-full">
+        <div class="text-fond-bleu text-center text-xl">Une idée ? N'hésitez pas à me faire part de toutes vos envies ! Je serais ravi d'en discuter avec vous</div>
+        <form action="#" method="POST" class="flex items-center justify-center h-full mt-12">
             <div class="grid grid-cols-1 gap-y-8 w-1/2">
                 <div class="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-y-6">
                     <div class="relative w-full lg:w-3/4 justify-self-center lg:justify-self-start">
