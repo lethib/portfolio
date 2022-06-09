@@ -10,6 +10,7 @@ app.secret_key = "thibwebdev"
 
 @app.route('/', methods=["POST","GET"])
 def home():
+    ok = request.args.get('ok') #On récupère l'argument
     if request.method == "POST":
         demande_info = request.form
         msg = MIMEMultipart()
@@ -33,9 +34,9 @@ def home():
         print('Mail sent')
         mailserver.quit()
 
-        return render_template('index.html')
+        return render_template('index.html', ok=True)
     else:
-        return render_template('index.html')
+        return render_template('index.html', ok=False)
 
 if __name__ == '__main__':
     app.run(debug=True)

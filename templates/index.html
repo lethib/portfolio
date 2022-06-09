@@ -141,7 +141,7 @@
             <li><a href="#contact" class="text-lg hover:text-blue-100" uk-scroll>Contact</a></li>
         </ul>
 
-        <div class="dropdown lg:hidden uk-animation-fade" style="animation-duration: 1000ms;">
+        <div class="dropdown lg:hidden uk-animation-fade" style="animation-duration: 1000ms; z-index: 1;">
             <label tabindex="0" class="btn m-1 bg-white hover:bg-blue-100" style="color: #012b70;">Menu</label>
             <ul tabindex="0" class="dropdown-content menu p-2 bg-white rounded-box w-52 text-fond-bleu">
                 <li><a href="#profil" class="text-lg hover:text-blue-100 active:bg-fond-bleu active:text-white" uk-scroll>Profil</a></li>
@@ -178,7 +178,7 @@
                     <p><strong>Salut !</strong> Je m'appelle Thibault, 22 ans ! Je suis actuellement étudiant à Grenoble-INP Phelma, une école d'ingénieur. Pour intégrer cette école, j'ai fait deux ans de prépa (CPGE Math Sup / Math Spé). J'ai toujours beaucoup aimé la programmation et depuis maintenant un an, je m'intéresse beaucoup au Développement Web.</p>
                     <p><strong>Pourquoi le Développement Web ? </strong>Je me suis intéressé à ce domaine en naviguant sur internet et en découvrant des sites web très esthétiques et fonctionnels. La technologie Web a fortement évolué ce qui laisse place à une grande créativité !</p> 
                     <p><strong>Pourquoi me lancer en tant que Freelance ?</strong>J'aime me rendre utile. C'est pourquoi je veux proposer mes services pour répondre à des demandes précises. C'est aussi pour moi une très bonne opportunité d'utiliser mes compétences techniques, de communication, d'écoute et de conseil.</p> 
-                    <p>Je n'ai pas de formation dans ce domaine : j'ai tout appris en autodidacte. J'ai réalisé des projets personnels pour m'entrâiner que vous pourrez retrouver dans mon portfolio. Rien de mieux que des projets pour apprendre à coder et pour découvrir de nouvelles choses.</p> 
+                    <p>Je n'ai pas de formation dans ce domaine : j'ai tout appris en autodidacte. J'ai réalisé des projets personnels pour m'entraîner que vous pourrez retrouver dans mon portfolio. Rien de mieux que des projets pour apprendre à coder et pour découvrir de nouvelles choses.</p> 
         </div>
         </div>
         
@@ -186,7 +186,7 @@
 
     <section id="outils" class="grid grid-cols-1 place-content-center justify-items-center gap-y-20 py-16" style="background-size: cover;">
         <h3 class="text-fond-bleu text-3xl font-bold">Mes outils</h3>
-        <p class="-mt-16 text-fond-bleu text-center">Mes compétences sont en constante amélioration car j'apprends beaucoup sur le tas, en réalisant des projets</p>
+        <p class="-mt-16 text-fond-bleu text-center">Mes compétences sont en constante amélioration car j'apprends beaucoup en réalisant des projets.</p>
 
         <div class="grid grid-cols-2 gap-y-8 md:grid-cols-3 lg:grid-cols-7 place-content-around justify-items-center text-xl font-bold" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 400">
             <div class="grid grid-cols-1 justify-items-center place-content-center">
@@ -443,5 +443,10 @@
             </div>
         </form>
     </section>
+
+    <!-- Affichage du message si le mail a été envoyé -->
+    {% if ok %}
+        <script>alert('La demande a bien été envoyée ! Je tâcherais de vous répondre dans les plus brefs délais !')</script>
+    {% endif %}
 </body>
 </html>
