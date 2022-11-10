@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 from password import *
 
 app = Flask(__name__)
-app.secret_key = "thibwebdev"
+#app.secret_key = ""
 
 @app.route('/', methods=["POST","GET"])
 def home():
